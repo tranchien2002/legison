@@ -53,7 +53,6 @@ end
 
 
 section = Section.new
->>>>>>> b872757b4444767d115cad55599cf2dc27308e92
 section.add_article "điều 1"
 p section.articles
 
