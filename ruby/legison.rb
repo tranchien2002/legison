@@ -2,11 +2,13 @@ require "./regex"
 
 
 class Section
+
 	attr_accessor :articles, :header
 
   def initialize header
     @articles = Array.new
 		@header = header
+
   end
 
 
@@ -16,6 +18,7 @@ class Section
 end
 
 class Chapter
+
 	attr_accessor :sections, :articles, :header
 
 
@@ -23,6 +26,7 @@ class Chapter
 		@header = header
 		@sections = Array.new
 		@articles = Array.new
+
   end
 
 	def add_section section
@@ -36,6 +40,7 @@ end
 
 class Legison
 	attr_accessor :sigs, :base_ons, :chapters
+
   def initialize
     @base_ons = Array.new
     @signs = Array.new
@@ -44,6 +49,11 @@ class Legison
 end
 
 
+
+
+
+section = Section.new
+>>>>>>> b872757b4444767d115cad55599cf2dc27308e92
 section.add_article "điều 1"
 p section.articles
 
