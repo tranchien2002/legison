@@ -14,7 +14,7 @@ topic:
 \n(Mục|MỤC)\s*(\d+)\s*(.+)      //??
 
 article:
-dA(\n.iê?.(u|ù)\s+(\d+)\.\s+(.+))|(\.\/\.)
+(\n.iê?.(u|ù)\s+(\d+)\.\s+(.+))|(\.\/\.)
 
 effectiveDate:
 thi\s*hành\s*từ\s*ngày\s*(\d{1,2})\s*tháng\s*(\d{1,2})\s*năm\s*(\d{4})
@@ -23,7 +23,7 @@ này.*thi\s*hành.*ngày\s*(\d{1,2})\s*tháng\s*(\d{1,2})\s*năm\s*(\d{4})
 passDate:
 thông\s*qua\s*ngày\s*(\d{1,2})\s*tháng\s*(\d{1,2})\s*năm\s*(\d{4})
 
-header văn bản luật:
+header văn bản luật: lấy match thứ nhất
 (?<=LUẬT)\s+(.*)
 
 xâu chữ cái tiếng việt
