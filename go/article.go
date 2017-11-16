@@ -1,8 +1,6 @@
 package main
 
-import "regexp"
-
-type article struct{
-	header string	`json:header`
-	content string	`json:content`
+type article struct {
+	Header  string `json:"header"`
+	Content string `json:"content"`
 }

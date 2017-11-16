@@ -753,17 +753,22 @@ string.scan(/(\n.iê?.(u|ù)\s+(\d+)\.\s+(.+))|(\.\/\.)/) do |e|
 	articles << [e[3], $~.offset(0)]
 end
 
+p "CHAPTER:"
+
 chapters.each do |e|
 	p e
 end
 
 p "=============================================="
+
+p "TOPIC:"
 topics.each do |e|
 	p e
 end
 
 p "=============================================="
 
+p "ARTICLE:"
 articles.each do |e|
 	p e
 end
